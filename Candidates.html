@@ -1,0 +1,1096 @@
+<!DOCTYPE html>
+
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Titillium+Web:900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Barriecito&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <style>
+    .topnav {
+      background-color: white;
+      overflow: hidden;
+      top:0;
+      text-align:center;
+      vertical-align:top;
+    }
+    .topnav a{
+      text-decoration:none;
+      background-color: #FFFFFF;
+      color: #012169;
+      border: 0px;
+      font-family: 'Open Sans',sans-serif;
+      font-size: 20px;
+      font-weight: 1000;
+    }
+    .menu {
+      display:inline-block;
+      margin-bottom: 0px;
+      margin-top:0px;
+      margin-left:0px;
+      padding: 20px;
+      padding-right: 40px;
+      padding-left:40px;
+      vertical-align:middle;
+    }
+    .topnav a:hover { /*hover*/
+      /* background-color: #ddd;
+      color: #BF0A30;
+      text-align: center; */
+      color: #BF0A30;
+      text-decoration: none;
+    }
+
+    a.hover:hover {
+      text-decoration: underline;
+    }
+
+    .topnav a.active { /*onsite*/
+      /* border-bottom: 7px solid #bf0d3e;
+      padding-bottom: 0px; */
+      text-decoration:underline;
+      text-decoration-color:#BF0A30;
+
+    }
+    .topnav .icon {
+      display: none;
+      text-align: center;
+    }
+    @media screen and (max-width: 600px) {
+      .topnav a:not(:first-child) {display: none;}
+      .topnav a.icon {
+        float: right;
+        display: block;
+      }
+    }
+    @media screen and (max-width: 600px) {
+      .topnav.responsive {position: relative;}
+      .topnav.responsive a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+      .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: center;
+      }
+    }
+    #header{
+      color: #FFFFFF;
+      vertical-align:middle;
+      width:100%;
+      margin:0px;
+      padding:0px;
+    }
+    img{
+      width:60%;
+      align:left;
+      padding-top:30px;
+      padding-bottom:30px;
+      padding-left:10px;
+    }
+    table, th, td {
+      border: 1px solid black;
+      border-collapse:collapse;
+      padding: 10px;
+    }
+    table {
+      width:70%;
+      table-layout:fixed;
+    }
+    .footer {
+      width: 100%;
+      background-color: #BF0A30;
+      color: white;
+      text-align: center;
+      padding:10px;
+      margin-bottom:0px;
+      font-family: 'Noto Sans JP', sans-serif;
+    }
+    #Main {
+      margin-bottom:10px;
+      width:100%;
+      background-color:white;
+      font-family: righteous;
+      color: #012169;
+    }
+    .text{
+      vertical-align:middle;
+      padding:0px;
+      margin-top:auto;
+      margin-bottom:auto;
+      font-family: 'Open Sans',sans-serif;
+    }
+    #Home {
+      padding-left:0px;
+    }
+    #Logo {
+      padding:0px;
+    }
+    body {
+      margin:0px;
+      padding:0px;
+    }
+  </style>
+  <title>Rising Youth: Meet the candidates</title>
+</head>
+<body>
+<div class="topnav" id="header">
+  <div class="menu" id="Logo">
+    <a href="HomePage.html"><img style="width:25%;border:none;" src = "android-icon-192x192.png"></a>
+  </div>
+  <div class="menu" id="Home">
+    <a href="HomePage.html">Rising Voters</a>
+  </div>
+  <div class="menu" id="Register">
+    <a href="Register.html">Register</a>
+  </div>
+  <div class="menu">
+    <a href="Candidates.html" class="active">Candidates</a>
+  </div>
+  <div class="menu">
+    <a href="Maps.html">Maps</a>
+  </div>
+  <div class="menu">
+    <a href="AboutUs.html">About Us</a>
+  </div>
+  <div class="menu">
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()"></a>
+  </div>
+</div>
+
+  <div id="Main">
+<div class="row" style="width:100%;">
+   <div class="col-sm-4" style="background-color:white;">
+     <h2 style="padding-left:10px;">Democrats</h2>
+  </div>
+</div>
+<div class="row" style="width:100%;">
+  <div class="col-sm-4" style="background-color:white;">
+     <img alt="Photograph of Joe Biden" src = "data:image/jpeg;base64,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">
+   </div>
+
+   <div class="col-sm-8" style="background-color :white;">
+     <div class="text">
+     <h3><a href="https://joebiden.com/">Joe Biden</a> (@JoeBiden)</h3>
+     <p>Biden was the U.S. Vice President under Barack Obama and a U.S. Senator from Delaware.</p>
+     <p>His platform is that he is running for the middle class and will defend "American" values.</p>
+     <table>
+       <tr>
+         <th>For</th>
+         <th>Against</th>
+       </tr>
+       <tr>
+         <td>
+           <ul>
+             <li>Strengthen Violence Against Women Act</li>
+             <li>Address root causes of migration</li>
+             <li>Strengthen the military</li>
+             <li>Green New Deal</li>
+           </ul>
+         </td>
+         <td><ul>
+          <li>Medicare for All</li>
+          <li>Higher tarriffs on imports from countries</li>
+          <li>Withdrawing from the Paris Climate Accord</li>
+
+         </ul></td>
+
+       </tr>
+     </table>
+   </div>
+   </div>
+ </div>
+ <div class="row" style="width:100%;">
+   <div class="col-sm-4" style="background-color:white;">
+     <img alt="Photograph of Cory Booker" src = "http://img.timeinc.net/time/2011/time100/t100_booker.jpg">
+   </div>
+   <div class="col-sm-8" style="background-color:white;">
+     <div class="text">
+     <h3><a href="https://corybooker.com/">Cory Booker</a> (@CoryBooker)</h3>
+     <p>Booker is a first-term Senator from New Jersey and a former Mayor of Newark, New Jersey.</p>
+     <p>He still lives in Newark's central ward, which he says  makes him more connected to his less affluent constituents.</p>
+     <table>
+       <tr>
+         <th>For</th>
+         <th>Against</th>
+       </tr>
+       <tr>
+         <td>
+           <ul>
+             <li>Equal justice</li>
+             <li>Criminal justice reform</li>
+             <li>Green New Deal</li>
+             <li>Medicare for All</li>
+           </ul>
+         </td>
+         <td><ul>
+           <li>Getting rid of private insurers</li>
+           <li>Legalizing marijuana</li>
+           <li>Building a wall between Mexico and the U.S</li>
+         </ul></td>
+       </tr>
+     </table>
+   </div>
+    </div>
+  </div>
+  <div class="row" style="width:100%;">
+    <div class="col-sm-4" style="background-color:white;">
+      <img alt="Photograph of Michael Bennet" src = "data:image/jpeg;base64,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">
+    </div>
+    <div class="col-sm-8" style="background-color:white;">
+      <div class="text">
+      <h3><a href="https://michaelbennet.com/">Michael Bennet</a> (@MichaelBennet)</h3>
+      <p>Bennet was the Chief of Staff for Colorado Governor John Hickenlooper.</p>
+      <table>
+        <tr>
+          <th>For</th>
+          <th>Against</th>
+        </tr>
+        <tr>
+          <td><ul><li>Political reform</li><li>Fighting climate change</li></ul></td>
+          <td><ul>
+            <li>Medicare for All</li>
+            <li>Banning abortion</li>
+            <li>Building a wall between Mexico and the U.S</li>
+          </ul></td>
+        </tr>
+      </table>
+    </div>
+    </div>
+  </div>
+  <div class="row" style="width:100%;">
+    <div class="col-sm-4" style="background-color:white;">
+     <img alt="Photograph of Steve Bullock" src = "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxITEhUSEBAQEBASFRUVFRAVEA8PDw8VFRUWFhUVFRUYHSggGBolGxUVITEhJSkrLi4uFx8zODMtNygtLisBCgoKDg0OGxAQGi0lHiUtLS0tLS0tLS0tLSstLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLSstLS0rLf/AABEIARMAtwMBIgACEQEDEQH/xAAcAAABBQEBAQAAAAAAAAAAAAACAAEDBAUGBwj/xAA9EAABAwIEBAQCBwcEAwEAAAABAAIRAwQFEiExQVFhcQYTIoEHMiNCkaGxwdEUUmJy4fDxM0NjghYkNBX/xAAZAQADAQEBAAAAAAAAAAAAAAAAAQMCBAX/xAAmEQACAgICAgICAgMAAAAAAAAAAQIRAyESMQRBIjJhcROhFCNR/9oADAMBAAIRAxEAPwDyByCEZKAKSOgEhC86I3KOotITJ7RskdSF7BgloG2zdOC8owKlmqsH8QXtbKOWgByAUpds61qCLXhUb91yfxNxSpSqsDHRuut8KD5u64P4qia7dDxSj9Qxr/Yzj8SxSpVADzKz0VQISUyeZVIdExMG6aKxStiRMFBNIihIqZ9u4fVP6KJ4QMByhudlM4qvdHSFqPZOXQ1nbF8xsEDXmm/TcLpcGtA2iXEakLmLj5z3RDJ/JJr0hThwimX7jF6jhEwFFRdKhoWrn/KJRW8gwdFSUYpUhRlK7ZcCZycJnKBZlGtunSrjVJVXRKW2SFMAiTFZNsBytWFEOmQqrlqYMNHJpiS2W/CFtNyOQP5r168H0fsvMvA1Oa5d1XpNzU9J7LD9nS+kT+D3Tm7lHjeH03vGdoPcBVvBG7/5itfEW+pZhuCMzdT0cH4o8O0vKLmtAI6LzyjaTvovTfG2M06TPK0dVd9WR6Bzd+QXl9e4LttBwhbSMTlfZoWtqwQScwnUbStDOJ024baADVc5TfB1K17a7Y2J1GoJ4t5FJxEpEoxWNImfqnZDdWjaozU4aeI0glYf7T6zMb+5W7h+sloA01j9EpKhKVsw7imWOLXAgjgdFVqiXNHULqsQtBUpz9dux39p4hcvtVaDpBEhagzM1R2bGRbwOS4W4+c913140C3kcl5/V1ce6l4kdtm/JfSNDCbssdESCoLp81CdpUFF+UynqVZdK65QXK0QUvjRfakUzCnUC3oq3ATI7kapKi6MDgoSkSkFhGmC4LWwj5He6ynq1Y3eVpBWkC7O1+HtDVzupXX4m/Kw6rmvAbIZPNa/iOoQw6wpz6Z0w20XfAlxJfB+sVg+OserUrgNYYEEqfwGSA45gDPNct4yqk3BlwcQDrykqeH60bm+MnL8GBiFy90vcTmcZJOqu4Pg5qDM6ROvUqvY0hUqNadtyu+w+3DRsFvJk4qkQw4+e2czV8MuOse6pXOCVQdAT+a9NoUlYFs0/VH2KCzyR2PxoM8gq4FWB9LDPZa2E2rm+p4LXM15TpsvTn2DTwH5oW+GWVOBGv8Aco/nb1RP/HjHdnleHXs3GQ+lkuidJa7cKPErNr6uRpHmjVjthUAOrStnx1gTreqIGVzSPcbhw9lUp25OSo8AOZUJLv52gtHYkK6kntHNOFOg7qvNt7arhidSuwx+qGOcyID2h8cid/vC47iVrxlVol5D2gkwTpl1HOaNA6KYNVW0Mq6AuaS2dC2rKVwNU6Vc6p1tdGJdkaYJSnSNjOKiRvUZTBHrHgRn0I5o/Gr4o8lP4KpRbhZvj+rDAOyxI6cfZgVKr6dvnpvLDG4XLVLpxzF5LnE/MdSuxbRzWwb0XI3dDLPMHbooeI7T/ZXzFSTNXw4BnHNd9ZDt/VcN4UoaZzqS6AOS7+xpbfhxSzv5C8ZVE1bY6K9TAVa3o66Ky5p4KSOhkwcAFbwy6HL+qotoGFNZUiNRKzezMkmmY/xZotqeWRrlYJ5xm3XEWTGOApTDKnpcSNW5NWFbvxNrvFMPb8rdCR31lcZZ3PmMiIqOfDdeA10+9dMHyi2cmRcWo/go+M601KZB08uOoIJmei51pVzG6hdWdmnSB2gKkxdsFSRxTdyYaEFEhC0YLVo7VXQVm0HwVoAqGRbLY3qivXOqSVwNUk10J9gPTynchKRsYCSpbm1LSOqG1Evb3C6nF7YeW09k2zUemd94Qpf+u3suX+IT/W1nULrfDelu3suD8YXOa5HQqU3o6sEbZrYNRBY0HksDFsHzOqxocunU8l02As+WeSC9afNLWCSZ7Lk8V0pP8lvI20jKwq3yUGZWkuA269VMLaQX1L9lvU31jK3kImVbwlgdLT2jj7LYoYEwgzRouB3LgZPurcleyahrRz9lj1ZhANxRuWbZmTP2FdYbuoKPmAiImTss2/w5jBla2n3ayA0cgVZtahNuG/VBG4WZyXaLY4S6Zk1cVvXlopV6dIHcvc1ubrBXR4Zd3dE5n1G3DA2XAa6cTos2p4cpVCXGjTqh0gg+lw91awrwxRpmadM0Ht+UsqOJHOQdCOiTcaM8Gns6G9w6neUHsHyVabiwxIBgwRz1XimD2z2vOktoB5eOAiQfuC95smZGBsmNR9vJee4thzbZ97Ta4mmKLnOLoLjmYYk9ynjlxVEnj5y/WzybEK4fUe8DKHEkN/dHJQMTORNXpLTPK7CQlEUBKACatGi6Qs5qnt3rE1o3B0yS43SUNd5SSitGpPZK5DmREqNYNkln/qN7rrcVPoYFyNo6Hg9V1d27M1kIZqC0z0HBqmW2E8Grze/qB904zOq7g3OS0/6rzmlX+lzHiVHL1o9DxlSs9BwtkR2WVi995dYuJjdamFVZaOy4/wAa1/pIHVT8WFQ2Yzy+dm9hFUCDzMrrG4mxlMk6/evPcGqZ6Qg6tHvotGux2UPcSacSAJ0I390cdjjOkaVzifmyS4N2EbHuur8PGkzKHOYWPaWkHX5hpK86txSqQTVaAT8zpaB78CtU4OQAf26l5fIPAP2rTglsayOV6Nx+I/sz8jy17QYcWkOy/wBFt2eI0nOG0EaLgHG3pegVGOLtA1suc/8AVS2VCsw+ku8ocDuwzsCpta0bcrdM9Cdcwd5DTpz6LkPiHi1IWVcB7TWrPYwN3fuM47QFpUbkuLWzq4sHvK8i8Syy6r03EgCq+J9QInQyjx48pW/RDyJKEf3ow3p2qS4pka8OY1CjavSR5bCQokBTEPKKk6CgARJNDTpktZJASksbRvsmcUKdyFZSNsAHVbuFXklrSsILQwf/AFWokbxna4zc5aEcwuQoMlzRzIW14nraNA5BYNO8yODhBI4HYKfFs7P5Iwh8meq2FsGUmkwABq46AdyvM/FF4ypXJY7OASJGx7KviuO3FwA2rUJpjamPSwdwN1mK0YV2cM8zfRr4FiJZUjZrvxXoODXAcMpiA6Y7rygLsMCv4LCTvEqWaHtFMGV+zo721qU6h/ZnMZJk03sa6jU46jcT0V+Hkf8AyWFKoQPpINSNNSGc0V1SDspB+YD3SpWJGzzHJRt0dihB+iXD7QNPmPPmVojzHNaIncNA0aFDe3eopt7lX30oZvBXPW9VsuqPIDZ0njyUpOzWrpGgb5tGa9TRtJpd3IGg7zC8nxCs6s51R3zuJd9pmFveLMYNUik3Rg9RHMzpKwWhdXjwcVb9nD5eRSlxXogtquUj7wdj0IVu7w/0+bSBNM7t3dTP6KlU0PutzBbqDC6bo5Y/8MFMulvsNpVNWkUnnp6HdxwWHc2NSmfW3Q7OGrT7p2gcWV4TBpKs0red1MWALEppdDUGyllTI6m6SV2aoN5QkonICkhsTGqzZ1sjs0THDmVZwK18wuCrX1LI4t5FHbo1fGFiurtz3ZnGSeHAdlWcU5TKiVEG7GSSSlAhSulw+ym0p1mT/qPpuPAOHqb2kH7lzK9M+GFmy4s7ig/Y1RrxaS0Frh2IQo8tGoy4uylhniQ0w1tYaN2cOXIrZ/8AK6G4cCffMPZY9/gr6VV1Kq2HD2Dxwc3oo2YC2R6XFx4RJJPADiuWSSdM74OVWnonv/E5qDJSaRPHiVbwfBy6k66ujktaDS4jbPAkMZzJMAu6rpvDngICH3IyjcUZ9Tv5yNh/CFifGLGQ0UrGlDWwKlRrdBA0psjlx9lWGFLbRHJnrSds80uK5qPc8gNL3F2UbNnYDoBA9kKdqBxVTksqVTr7qzbVSNlVdue6lYgDQp3JmSVsW99Ig6jiNwVzzApqNQjZKjSka9zhocM1HQj6nP8Al/RY1TjP+FtWt8NJ0SxW0FRpqU9Xj5gPrD9QpuJZStHNPSQvOqSaMPsMoHIiUBKBs2/DD8pcVQxOpmqOPVSYVWyh3VVHmSeqcewn9EMEJCdieFsiAknSQAK9K+DVaDcN4TTP4hebFdv8KrrLXqs4vptcOuV2q3j+wmd78Qcat4bb5BUuwA4OGnkAnTMeZHA6LS+H9jRfTFzOesC5hn/ZIOwHMiNV5bd0nm8ruqHV9VxmC+AIiWfXEAacF0vg/H/2S8p0HFxpXDQx7S7OabgJp1ARoGySI3EqnBP5NbGpyS4p6PVruuGtJcYa0Ek8gNSV80eIMUN1c1bh3+485ejBowfZC9h+K2M+RZuY0xUuD5YjQhsS8/YvDgFibEggVHVqgd0TlXqU+I91MYAPHmpmhRNU1MIAkCkzQFFT3ngiceaAHbVKuW18WayqAfwaNVYt6Ldz9v6IGhYtRactVggP+Yfuu5+6ZX20Zb69G6enly90kqN1ZhlpQlhVlxCjc9STNtIahogzaomOQBUiZyfVIJhRqHNqpgtEgXJiEnJEoAS6H4eVS3EKJHJ2nPQrnVreEX5b23P/ACAfaCPzWo9oT6O48UUgbuo/Pklod5glvkzpmkGdYiOqy8JAZeNe5uVkhpbObITGx4jjKveJvXd1Tmyhha3NEtpAAAvcOIJMRzVKtDKTt6YYDAJdNCROumvmadl11/Rn1RB8TcWdWuxTJltuwM6Z3auP4Lk09a4L3F79XPOYnqUIK5JO3ZpKkC4IKruHNSO58lASsjHapJ07oWhOTr2QBJMBR5p7cUxJO3uUTWj/AKj7ygCZgEch+Kv0KWxI/lb+aoUhrJ/wrrKwJM8OPLomNM0aQaTDjoPvJSUdtMSGjo07DqeqSChzBTIgE7mqYqYzCkmCdaRiTsYlStKicU7CmIkchCchMEAIq9gL4urc/wDNT+9wColTWj8r6bv3ajD9jgmuwO7rum5rRlLvOfAdlyud/HP1IGnVZfiOsBRAE+sw0mM1QT6vMjlwV3Nmq1SBna+ofSJ+mnUMEbfveyxPE1UlzRJdMk1OFUjQEDhG3suqTqLMoxJTymTLlNBO1/vdRcUTCk0JAENFE0zKNxUTCgCQfd+KKSSOXAfmohr/AHopAJ0Hv1/ogCVz50G3PmprWnO23PmgyCNVZoP6QEwNu1cGgE8ElDbGd9AkgqjliE4RPaRuITBSsYICSdJbRJ9guCFpREqOUxE0puKYJ4QA5SO398EgnCAOpw18sl0iQMzhGaNPk/jn7lj45UmqZjQDRvyDt+fVX8GrfRiCQQCZH1I3qd2jYcdVi3j5e4jQT9vX3V5v4C9kaCqeCcIYnVQGJhUgUQRygBnFQhSuUbd0ASDkFPTChCnpIAMqWkUCVN2qANWi/RJQUddJSTKIK0qMfo8DXiosSwksGZmrfwWXZXGU67Laur8iiWjd0AduP3KDWy8ckZRakYSYCELCpFY5Bi1REKVRucgBmuRhyiRJASpBACjTA1cIf6SNdHaDmRqPYbnmsx7pJO8kmdhup7F8Zwdss/0HdVQtt6QhyUgExTrAxJJJIAByFpTuKEFICVWGGAq7BxUjG80wJc5KWxTF4G26ENnf7OKANFtSNtykobYf55JJjpmSrPnS0A8E37E/khyFuh3WLTG4tAkhPmSITEJmRi5CSiDUjAQBGU4TFSMbogaVjNRhRgowmIdj4J6gj7UpQkapyUAIJ0zU6AElKSCUAM5MwapJ2pATtEoiPZRNKNzuaYBAf5KZ1TgPtQEuPZGynzQBa80BgA56plE14HAE8uCSB2zQbcs4rPv3AvJG2n4Jrmk5ry08DChJUccEnaLZZtqmMSmzJy1CWKpAYuQp0igAV0H/AOQA1o1mBPdYVD5h01Ww3Fn85UcvJ1xOjBx3yKeI2JZBHynTsVSC262JZ2Frmgg6f1WI5sGFrG5V8jGWKTuIQSehBSnVUJBhPKZJMBihKcoSkAk9NMjYgA2kDgjbH97oIS2/RMCd2m5UReTo3QcUwBOp2UoHsEAHb0x/fFOns7lrX+oemCnQAWL1JrPI2lZ4VzE6WV7h1VNTx9FMv2ClIpkLnKhMclA4pQk5IA7dqtigCq1Eabwpg481OV2XhVEn7N1Khr28CZlGKjuhT1axLSCBtusq0OXFopBMnSVjnHCdIIUAIlMkkgBJ2pk7UAT0uqLy+Q91GEWZaAMN4lRvcT2UjDzV2lUaeCQGYKZ5JLVeANUkUBs/EPw0+1qCoDnoVDo/908iuPheyfGNrmWtNoYTTLxL+DeS8bJUcDbgX8hJT0OhlIBFlVSAJKFxTuKVMSQOqARcp09Amcw8grACZ4UOWzr4ohbR6IarIB3Cts2UV38hQnbE1SM9KUilKucopSSSQAydJMgBImBCiagCVOEwKcFMByU7HwnyhRvcOCALNZjiOiSmsLr05XCQEkWOj2f4o64dUnWII6LwZMkubxvqdHk/ZfoQTPSSXQcwgEdv8yZJJ9GofZF5qdySS5/Z1Bs2UV58hSSRH7Cl9WUAlOkcAkkuk5BkkkkAJMkkgBJ2p0kAGnTJJgS0tTB2UraYnZJJNgS1R6fdJJJZNI//2Q==">
+   </div>
+   <div class="col-sm-8" style="background-color:white;">
+     <div class="text">
+     <h3><a href="https://stevebullock.com/">Steve Bullock</a> (@GovernorBullock)</h3>
+     <p>Bullock is a two-term governor of New Jersey and a former Attorney General of Montana.</p>
+     <p>He is running on the platform of being a regular person and fighting the influence of corporations.</p>
+     <table>
+       <tr>
+         <th>For</th>
+         <th>Against</th>
+       </tr>
+       <tr>
+         <td>
+           <ul>
+             <li>Decreasing influence of foreign money</li>
+             <li>Giving the general populace more influence than big corporations</li>
+             <li>Carbon emission capture</li>
+           </ul>
+         </td>
+         <td>
+           <ul>
+             <li>Involvement of corporations in politics</li>
+             <li>Medicare for All</li>
+             <li>Switch to renewable energy only</li>
+           </ul>
+         </td>
+       </tr>
+     </table>
+   </div>
+   </div>
+ </div>
+ <div class="row" style="width:100%;">
+   <div class="col-sm-4" style="background-color:white;">
+     <img alt="Photograph of Pete Buttigieg" src = "https://media.bizj.us/view/img/10923885/2016-office-of-the-mayor-portraits-03*750xx2890-3853-0-0.jpg">
+   </div>
+   <div class="col-sm-8" style="background-color:white;">
+     <div class="text">
+     <h3><a href="https://peteforamerica.com/">Pete Buttigieg</a> (@PeteButtigieg)</h3>
+     <p>Buttigieg is the mayor of South Bend, Indiana and an Afghanistan war veteran.</p>
+     <p>He is the first openly gay candidate and would become the younget U.S. president.</p>
+     <table>
+       <tr>
+         <th>For</th>
+         <th>Against</th>
+       </tr>
+       <tr>
+         <td>
+           <ul>
+             <li>Ban conversion therapy</li>
+             <li>Debt-free college</li>
+             <li>Green New Deal</li>
+             <li>Increase representation for Puerto Rico and Washington, D.C.</li>
+           </ul>
+         </td>
+         <td>
+           <ul>
+             <li>Medicare for All</li>
+             <li>Free college</li>
+           </ul>
+         </td>
+       </tr>
+     </table>
+   </div>
+   </div>
+ </div>
+ <div class="row" style="width:100%;">
+   <div class="col-sm-4" style="background-color:white;">
+     <img alt="Photograph of Julian Castro" src = "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Joaquin_Castro%2C_official_portrait%2C_113th_Congress.jpg/220px-Joaquin_Castro%2C_official_portrait%2C_113th_Congress.jpg">
+   </div>
+   <div class="col-sm-8" style="background-color:white;">
+     <div class="text">
+     <h3><a href="https://www.julianforthefuture.com/">Juli&aacuten Castro</a> (@JulianCastro)</h3>
+     <p>Castro is a former Housing and Urban Development Secretary under Barack Obama.</p>
+     <p>He is the only Latinx candidate in the 2020 presidential race.</p>
+     <table>
+       <tr>
+         <th>For</th>
+         <th>Against</th>
+       </tr>
+       <tr>
+         <td>
+           <ul>
+             <li>End police brutality</li>
+             <li>Improve relationship with Central America</li>
+             <li>Free public college</li>
+             <li>Medicare for All</li>
+             <li>Green New Deal</li>
+           </ul>
+         </td>
+         <td>
+           <ul>
+             <li>Section 1325 of the Immigration and Nationality Act</li>
+             <li>Lead poisoning</li>
+           </ul>
+         </td>
+       </tr>
+     </table>
+   </div>
+    </div>
+   </div>
+   <div class="row" style="width:100%;">
+     <div class="col-sm-4" style="background-color:white;">
+       <img alt="Photograph of Bill de Blasio" src = "https://i2.wp.com/www.norwoodnews.org/wp-content/uploads/2017/03/Mayor-Bill-de-Blasio.jpg?ssl=1">
+     </div>
+     <div class="col-sm-8" style="background-color:white;">
+       <div class="text">
+       <h3><a href="https://billdeblasio.com/">Bill de Blasio</a> (@BilldeBlasio)</h3>
+       <p>De Blasio is the current mayor of New York City, was a campaign manager for
+         Hillary Clinton in 1999, and was the Regional Director for the U.S. Department of Housing
+         and Urban Development under Bill Clinton.</p>
+       <p>He is running as a family man, putting workers first, and is vocally anti-Trump and anti-establishment.</p>
+       <table>
+         <tr>
+           <th>For</th>
+           <th>Against</th>
+         </tr>
+         <tr>
+           <td>
+             <ul>
+               <li>Medicare for All</li>
+               <li>Green New Deal</li>
+             </ul>
+           </td>
+           <td>
+             <ul>
+               <li>Stop and Frisk</li>
+               <li>Corporate involvement in politics</li>
+             </ul>
+           </td>
+         </tr>
+       </table>
+     </div>
+       </div>
+     </div>
+     <div class="row" style="width:100%;">
+       <div class="col-sm-4" style="background-color:white;">
+         <img alt="Photograph of John Delaney" src = "https://mediad.publicbroadcasting.net/p/nhpr/files/styles/x_large/public/201903/John_Delaney_113th_Congress_official_photo.jpg">
+       </div>
+       <div class="col-sm-8" style="background-color:white;">
+         <div class="text">
+         <h3><a href="https://www.johndelaney.com/">John Delaney</a> (@JohnDelaney)</h3>
+         <p>Delaney is a third-term Congressman from Maryland and a businessman.</p>
+         <p>He is running on a platform of bipartisanship and new job creation.</p>
+         <table>
+           <tr>
+             <th>For</th>
+             <th>Against</th>
+           </tr>
+           <tr>
+             <td>
+               <ul>
+                 <li>Bipartisanship</li>
+                 <li>Negative emissions technology</li>
+                 <li>Carbon fee and dividend</li>
+                 <li>Creation of a Climate Corps</li>
+               </ul>
+             </td>
+             <td>
+               <ul>
+                 <li>Medicare for All</li>
+                 <li>Green New Deal</li>
+               </ul>
+             </td>
+           </tr>
+         </table>
+       </div>
+       </div>
+     </div>
+     <div class="row" style="width:100%;">
+       <div class="col-sm-4" style="background-color:white;">
+         <img alt="Photograph of Tulsi Gabbard" src = "https://upload.wikimedia.org/wikipedia/commons/2/2a/Tulsi_Gabbard%2C_official_portrait%2C_113th_Congress.jpg">
+       </div>
+       <div class="col-sm-8" style="background-color:white;">
+         <div class="text">
+         <h3><a href="https://www.tulsi2020.com/">Tulsi Gabbard</a> (@TulsiGabbard)</h3>
+         <p>Gabbard is a fourth-term representative from Hawaii and an Iraq war veteran.</p>
+         <p>Her main goal is to end pointless war and promote peace.</p>
+         <table>
+           <tr>
+             <th>For</th>
+             <th>Against</th>
+           </tr>
+           <tr>
+             <td>
+               <ul>
+                 <li>LGBTQ+ rights (was previously against)</li>
+                 <li>Renewable energy</li>
+                 <li>Carbon neutrality goals</li>
+               </ul>
+             </td>
+             <td>
+               <ul>
+                 <li>Nuclear power (until a solution to nuclear waste is found)</li>
+                 <li>Current wars in the Middle East</li>
+               </ul>
+             </td>
+           </tr>
+         </table>
+         <p>To see more information about Gabbard's policies, go to: <a href="https://www.tulsigabbard.org/">https://www.tulsigabbard.org/</a>
+      </div>
+    </div>
+    </div>
+    <div class="row" style="width:100%;">
+      <div class="col-sm-4" style="background-color:white;">
+          <img alt="Photograph of Kirsten Gillibrand" src = "https://upload.wikimedia.org/wikipedia/commons/d/df/Kirsten_Gillibrand%2C_official_portrait%2C_112th_Congress.jpg">
+      </div>
+      <div class="col-sm-8" style="background-color:white;">
+        <div class="text">
+        <h3><a href="https://kirstengillibrand.com/">Kirsten Gillibrand</a> (@SenGillibrand)</h3>
+        <p>Gillibrand is a current Senator from New York whose policies focus on supporting women.</p>
+        <p>She is running as a staunch supporter of the #MeToo movement and a supporter of working families.</p>
+        <table>
+          <tr>
+            <th>For</th>
+            <th>Against</th>
+          </tr>
+          <tr>
+            <td>
+              <ul>
+                <li>Law supporting Roe v. Wade</li>
+                <li>Automatic voter registration</li>
+                <li>Medicare for All</li>
+                <li>Green New Deal</li>
+                <li>Postal banking</li>
+              </ul>
+            </td>
+            <td>
+              <ul>
+                <li>Cash bail</li>
+                <li>Prohibition of marijuana</li>
+              </ul>
+            </td>
+          </tr>
+        </table>
+      </div>
+      </div>
+    </div>
+    <div class="row" style="width:100%;">
+      <div class="col-sm-4" style="background-color:white;">
+        <img alt="Photograph of Mike Gravel" src = "https://upload.wikimedia.org/wikipedia/commons/6/6b/Mike_Gravel_portrait.jpg">
+      </div>
+      <div class="col-sm-8" style="background-color:white;">
+        <div class="text">
+        <h3><a href="https://www.mikegravel.org/home/">Mike Gravel</a> (@MikeGravel)</h3>
+        <p>Gravel is a former U.S. Senator from Alaska.</p>
+        <p>He is running as the most radical Democratic candidate.</p>
+        <table>
+          <tr>
+            <th>For</th>
+            <th>Against</th>
+          </tr>
+          <tr>
+            <td>
+              <ul>
+                <li>Free public college</li>
+                <li>Automatic tax filing</li>
+                <li>Federal school funding</li>
+                <li>Bodily autonomy</li>
+                <li>Term limit for federal judges</li>
+                <li>Self-determination and reparations for U.S. territories</li>
+              </ul>
+            </td>
+            <td>
+              <ul>
+                <li>All wars</li>
+                <li>Medicare for All</li>
+                <li>Death penalty</li>
+              </ul>
+            </td>
+          </tr>
+        </table>
+      </div>
+      </div>
+    </div>
+    <div class="row" style="width:100%;">
+      <div class="col-sm-4" style="background-color:white;">
+        <img alt="Photograph of Kamala Harris" src = "https://images-na.ssl-images-amazon.com/images/I/61q8syRNTDL._SY679_.jpg">
+      </div>
+      <div class="col-sm-8" style="background-color:white;">
+        <div class="text">
+        <h3><a href="https://kamalaharris.org/">Kamala Harris</a> (@KamalaHarris)</h3>
+        <p>Harris is a U.S. Senator from California and a former Attorney General of California.</p>
+        <p>She is the second black woman to serve in the U.S. Senate and her platform is for the working people.</p>
+        <table>
+          <tr>
+            <th>For</th>
+            <th>Against</th>
+          </tr>
+          <tr>
+            <td>
+              <ul>
+                <li>Medicare for All</li>
+                <li>Green New Deal</li>
+                <li>Legalization of marijuana</li>
+                <li>Early voting and automatic voter registration</li>
+                <li>Make Election Day a national holiday</li>
+                <li>Reparations for slavery</li>
+                <li>Israel and a two-state solution</li>
+              </ul>
+            </td>
+            <td>
+              <ul>
+                <li>Wars in Afghanistan, Iraq, and Syria</li>
+                <li>Private migrant detention centers</li>
+                <li>Death penalty</li>
+              </ul>
+            </td>
+          </tr>
+        </table>
+      </div>
+      </div>
+    </div>
+    <div class="row" style="width:100%;">
+      <div class="col-sm-4" style="background-color:#white;">
+        <img alt="Photograph of John Hickenlooper" src = "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/John_Hickenlooper_by_Gage_Skidmore.jpg/220px-John_Hickenlooper_by_Gage_Skidmore.jpg">
+      </div>
+      <div class="col-sm-8" style="background-color:white;">
+        <div class="text">
+        <h3><a href="https://www.hickenlooper.com/">John Hickenlooper</a> (@Hickenlooper)</h3>
+        <p>Hickenlooper is the governor of Colorado and a former mayor of Denver.</p>
+        <p>His platform is that he comes from a working class family and thus understands the average American.</p>
+        <table>
+          <tr>
+            <th>For</th>
+            <th>Against</th>
+          </tr>
+          <tr>
+            <td>
+              <ul>
+                <li>Expand social security</li>
+                <li>Education for the incarcerated</li>
+                <li>Open and free trade</li>
+              </ul>
+            </td>
+            <td>
+              <ul>
+                <li>Medicare for All</li>
+                <li>Heartbeat laws</li>
+              </ul>
+            </td>
+          </tr>
+        </table>
+      </div>
+      </div>
+    </div>
+    <div class="row" style="width:100%;">
+      <div class="col-sm-4" style="background-color:white;">
+        <img alt="Photograph of Jay Inslee" src = "https://www.governor.wa.gov/sites/default/files/images/Governor%20Jay%20Inslee%20Official%20Portrait.jpg">
+      </div>
+      <div class="col-sm-8" style="background-color:white;">
+        <div class="text">
+        <h3><a href="https://www.jayinslee.com/">Jay Inslee</a> (@JayInslee)</h3>
+        <p>Inslee is the governor of Washington state and a former U.S. Representative from Washington state.</p>
+        <p>His entire campaign revolves around fighting climate change.</p>
+        <table>
+          <tr>
+            <th>For</th>
+            <th>Against</th>
+          </tr>
+          <tr>
+            <td>
+              <ul>
+                <li>Decrease tax subsidies for oil and coal companies</li>
+                <li>Invest in a clean energy economy</li>
+                <li>Green New Deal</li>
+              </ul>
+            </td>
+            <td>
+              <ul>
+                <li>Medicare for All (prefers state-run program)</li>
+                <li>Making Patriot Act permanent </li>
+              </ul>
+            </td>
+          </tr>
+        </table>
+      </div>
+      </div>
+    </div>
+    <div class="row" style="width:100%;">
+      <div class="col-sm-4" style="background-color:white;">
+        <img alt="Photograph of Andrew Yang" src = "https://cdn.technologyreview.com/i/images/andrew-yang---general_0.png?sw=959&cx=0&cy=261&cw=2336&ch=3114">
+      </div>
+      <div class="col-sm-8" style="background-color:white;">
+        <div class="text">
+        <h3><a href="https://www.yang2020.com/">Andrew Yang</a> (@AndrewYang)</h3>
+        <p>Yang is an entrepreneur who founded the nonprofit <a href="https://ventureforamerica.org/">Venture for America</a>.</p>
+        <p>His main issue is providing every adult with a universal basic income of $1,000.</p>
+        <table>
+          <tr>
+            <th>For</th>
+            <th>Against</th>
+          </tr>
+          <tr>
+            <td>
+              <ul>
+                <li>Universal basic income</li>
+                <li>Medicare for All</li>
+                <li>Legalization of marijuana</li>
+                <li>Automatic voter registration</li>
+                <li>Lower voting age to 16</li>
+                <li>Make Puerto Rico a state</li>
+                <li>Green New Deal</li>
+              </ul>
+            </td>
+            <td>
+              <ul>
+                <li>Authorization for the use of Military Force</li>
+                <li>Carried-interest investment loopholes on capital gains</li>
+              </ul>
+            </td>
+          </tr>
+        </table>
+      </div>
+      </div>
+    </div>
+    <div class="row" style="width:100%;">
+      <div class="col-sm-4" style="background-color:white;">
+        <img alt="Photograph of Marianne Williamson" src = "https://i1.wp.com/marianne.com/wp-content/uploads/2015/01/mwimage.jpg?resize=261%2C385">
+      </div>
+      <div class="col-sm-8" style="background-color:white;">
+        <div class="text">
+        <h3><a href="https://www.marianne2020.com/">Marianne Williamson</a> (@marwilliamson)</h3>
+        <p>Williamson is an author and activist who ran for the U.S. House of Representative in California as an independent.</p>
+        <p>Her goal is to make the U.S. the best place to raise a child and heal the country with love.</p>
+        <table>
+          <tr>
+            <th>For</th>
+            <th>Against</th>
+          </tr>
+          <tr>
+            <td>
+              <ul>
+                <li>Medicare for All</li>
+                <li>Green New Deal</li>
+                <li>Increase taxes for the wealthy</li>
+              </ul>
+            </td>
+            <td>
+              <ul>
+                <li> Privatizing some or all of Social Security</li>
+                <li> Withdrawing from Paris Climate agreement</li>
+                <li> Banning abortion</li>
+              </ul>
+            </td>
+          </tr>
+        </table>
+      </div>
+     </div>
+   </div>
+   <div class="row" style="width:100%;">
+     <div class="col-sm-4" style="background-color:white;">
+       <img alt="Photograph of Elizabeth Warren" src = "https://upload.wikimedia.org/wikipedia/commons/8/82/Elizabeth_Warren--Official_113th_Congressional_Portrait--.jpg">
+     </div>
+     <div class="col-sm-8" style="background-color:white;">
+       <div class="text">
+       <h3><a href="https://elizabethwarren.com/">Elizabeth Warren</a> (@ewarren)</h3>
+       <p>Warren is a U.S. Senator from Massachusetts and a former law professor.</p>
+       <p>Her platform is that she is from a middle class family and thus understands
+          the needs of Americans.</p>
+       <table>
+         <tr>
+           <th>For</th>
+           <th>Against</th>
+         </tr>
+         <tr>
+           <td>
+             <ul>
+               <li>Medicare for All</li>
+               <li>Prioritizing American paychecks over corporate profits</li>
+               <li>Rebuild the middle class</li>
+               <li>Green New Deal</li>
+             </ul>
+           </td>
+           <td>
+             <ul>
+               <li>Racial disparities in the justice system</li>
+               <li>Complicated voting rules that weaken democracy</li>
+             </ul>
+           </td>
+         </tr>
+       </table>
+     </div>
+     </div>
+   </div>
+   <div class="row" style="width:100%;">
+     <div class="col-sm-4" style="background-color:white;">
+       <img alt="Photograph of Tom Steyer" src = "https://s.hdnux.com/photos/33/02/62/7089291/3/rawImage.jpg">
+     </div>
+     <div class="col-sm-8" style="background-color:white;">
+       <div class="text">
+       <h3><a href="https://www.tomsteyer.com/">Tom Steyer</a> (@TomSteyer)</h3>
+       <p>Steyer is a hedge fund manager and self-made billionaire. He founded
+         <a href="https://nextgenamerica.org/">NextGen America</a> and
+         <a href="https://www.needtoimpeach.com/">Need To Impeach</a>.</p>
+       <p>His platform is to increase voter turnout and decrease the influence of corporations.</p>
+       <table>
+         <tr>
+           <th>For</th>
+           <th>Against</th>
+         </tr>
+         <tr>
+           <td>
+             <ul>
+               <li>Reduce reliance on fossil fuels</li>
+               <li>Medicare for All</li>
+               <li>Green New Deal</li>
+             </ul>
+           </td>
+           <td>
+             <ul>
+               <li>Corporate tax breaks</li>
+               <li>Influence of corporations on politics</li>
+             </ul>
+           </td>
+         </tr>
+       </table>
+     </div>
+     </div>
+   </div>
+   <div class="row" style="width:100%;">
+     <div class="col-sm-4" style="background-color:white;">
+       <img alt="Photograph of Bernie Sanders" src = "https://upload.wikimedia.org/wikipedia/commons/d/de/Bernie_Sanders.jpg">
+     </div>
+     <div class="col-sm-8" style="background-color:white;">
+       <div class="text">
+       <h3><a href="https://berniesanders.com/">Bernie Sanders</a> (@SenSanders)</h3>
+       <p>Sanders is a U.S. Senator from Vermont who ran for president in 2016 as a Democrat and lost the primary.</p>
+       <p>His platform has been criticized for being too socialist, but he runs on fighting for the lower and middle classes.</p>
+       <table>
+         <tr>
+           <th>For</th>
+           <th>Against</th>
+         </tr>
+         <tr>
+           <td>
+             <ul>
+               <li>Medicare for All</li>
+               <li>Tax carbon emissions</li>
+               <li>Government funding for Planned Parenthood</li>
+               <li>Free public college and cancel current student debt</li>
+               <li>Green New Deal</li>
+               <li>Postal banking</li>
+             </ul>
+           </td>
+           <td>
+             <ul>
+               <li>Withrdrawal from Paris Climate Accord</li>
+               <li>Tax breaks for the wealthy and large corporations</li>
+             </ul>
+           </td>
+         </tr>
+       </table>
+     </div>
+     </div>
+   </div>
+   <div class="row" style="width:100%;">
+     <div class="col-sm-4" style="background-color:white;">
+       <img alt="Photograph of Tim Ryan" src = "https://img.huffingtonpost.com/asset/5bb7b5ff2200004301dd241b.jpeg?ops=scalefit_720_noupscale">
+     </div>
+     <div class="col-sm-8" style="background-color:white;">
+       <div class="text">
+       <h3><a href="https://timryanforamerica.com/">Tim Ryan</a> (@TimRyan)</h3>
+       <p>Ryan is a U.S. Representative for Ohio who challenged Nancy Pelosi for Speaker of the House.</p>
+       <p>His platform is fighting for the American Dream for all Americans.</p>
+       <table>
+         <tr>
+           <th>For</th>
+           <th>Against</th>
+         </tr>
+         <tr>
+           <td>
+             <ul>
+               <li>Increase funding for transportation infrastructure</li>
+               <li>Expand the Affordable Care Act</li>
+               <li>Government funding for Planned Parenthood</li>
+               <li>Green New Deal to help increase jobs</li>
+               <li>Federal policies that protect small farms</li>
+             </ul>
+           </td>
+           <td>
+             <ul>
+               <li>Withdrawal from the Paris Climate Accord</li>
+               <li>Banning abortion after 20 weeks</li>
+               <li>Eliminating private insurers</li>
+             </ul>
+           </td>
+         </tr>
+       </table>
+     </div>
+     </div>
+   </div>
+   <div class="row" style="width:100%;">
+     <div class="col-sm-4" style="background-color:white;">
+       <img alt="Photograph of Beto O'Rourke" src = "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Beto_O%27Rourke%2C_Official_portrait%2C_113th_Congress.jpg/220px-Beto_O%27Rourke%2C_Official_portrait%2C_113th_Congress.jpg">
+     </div>
+     <div class="col-sm-8" style="background-color:white;">
+       <div class="text">
+       <h3><a href="https://betoorourke.com/">Beto O'Rourke</a> (@BetoORourke)</h3>
+       <p>O'Rourke is a former U.S. Representative for Texas who lost the Senate race against Ted Cruz.</p>
+       <p>His platform is to embrace the diversity in America, for which he uses the example of his hometown, El Paso.</p>
+       <table>
+         <tr>
+           <th>For</th>
+           <th>Against</th>
+         </tr>
+         <tr>
+           <td>
+             <ul>
+               <li>Strengthen unions</li>
+               <li>More support for veterans</li>
+               <li>Focus on issues in Central America</li>
+               <li>Same-day voter registration</li>
+             </ul>
+           </td>
+           <td>
+             <ul>
+               <li>Medicare for All</li>
+               <li>Cash bail and prisons for profit</li>
+               <li>Prohibition of marijuana</li>
+               <li>Green New Deal (he has his own plan)</li>
+             </ul>
+           </td>
+         </tr>
+       </table>
+     </div>
+   </div>
+   </div>
+   <div class="row" style="width:100%;">
+     <div class="col-sm-4" style="background-color:white;">
+       <img alt="Photograph of Seth Moulton" src = "https://bloximages.chicago2.vip.townnews.com/salemnews.com/content/tncms/assets/v3/editorial/1/54/1545d4c3-ad08-557a-b7cc-b7afeec3b99e/5b1efbd19ae29.image.jpg?resize=400%2C600">
+     </div>
+     <div class="col-sm-8" style="background-color:white;">
+       <div class="text">
+       <h3><a href="https://sethmoulton.com/">Seth Moulton</a> (@sethmoulton)</h3>
+       <p>Moulton is a U.S. Representative for Massachusetts, an Iraq war veteran, and Marine Corps Captain.</p>
+       <p>His platform highlights bipartisan cooperation and focuses on his many roles in life.</p>
+       <table>
+         <tr>
+           <th>For</th>
+           <th>Against</th>
+         </tr>
+         <tr>
+           <td>
+             <ul>
+               <li>Green New Deal</li>
+               <li>Automatic voter registration</li>
+               <li>Puerto Rico and D.C statehood.</li>
+               <li>Election day as a national holiday</li>
+               <li>Restore voting rights to felons</li>
+               <li>Nationwide ranked voting</li>
+               <li>Increasing enlistment</li>
+               <li>Improved veterans' healthcare</li>
+             </ul>
+           </td>
+           <td>
+             <ul>
+               <li>Production of oil</li>
+               <li>Legalization of marijuana</li>
+               <li>Medicare for All</li>
+             </ul>
+           </td>
+         </tr>
+       </table>
+     </div>
+     </div>
+   </div>
+   <div class="row" style="width:100%;">
+     <div class="col-sm-4" style="background-color:white;">
+       <img alt="Photograph of Wayne Messam" src = "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Mayor_Messam.jpg/220px-Mayor_Messam.jpg">
+     </div>
+     <div class="col-sm-8" style="background-color:white;">
+       <div class="text">
+       <h3><a href="https://www.wayneforusa.com/">Wayne Messam</a> (@WayneMessam)</h3>
+       <p>Messam is the mayor of Miramar, Florida.</p>
+       <p>His platform focuses on making the government more responsive to citizens' opinions.</p>
+       <table>
+         <tr>
+           <th>For</th>
+           <th>Against</th>
+         </tr>
+         <tr>
+           <td>
+             <ul>
+               <li>Student loan debt cancellation</li>
+               <li>Free community college</li>
+               <li>Medicare for All</li>
+             </ul>
+           </td>
+           <td>
+             <ul>
+               <li>Tax breaks for the wealthy</li>
+               <li>Electoral college</li>
+               <li>Withdrawing from Paris Climate Accord</li>
+               <li>Nuclear energy</li>
+             </ul>
+           </td>
+         </tr>
+       </table>
+     </div>
+     </div>
+   </div>
+   <div class="row" style="width:100%;">
+     <div class="col-sm-4" style="background-color:white;">
+       <img alt="Photograph of Amy Klobuchar" src = "https://cdn.britannica.com/s:300x300/19/132819-004-940E3235.jpg">
+     </div>
+     <div class="col-sm-8" style="background-color:white;">
+       <div class="text">
+       <h3><a href="https://amyklobuchar.com/">Amy Klobuchar</a> (@amyklobuchar)</h3>
+       <p>Klobuchar is a fourth-term U.S. Senator from Minnesota.</p>
+       <p>She is campaigning on the platform that she is part of the working class and associates with the struggles of the average American.</p>
+       <table>
+         <tr>
+           <th>For</th>
+           <th>Against</th>
+         </tr>
+         <tr>
+           <td>
+             <ul>
+               <li>Green New Deal</li>
+               <li>Restrictions on drug prices</li>
+               <li>Prioritize mental health and combat addiction</li>
+               <li>Tuition-free community college</li>
+               <li>Connection to internet</li>
+             </ul>
+           </td>
+           <td>
+             <ul>
+               <li>Medicare for All</li>
+               <li>Abolish ICE</li>
+               <li>Withdrawal of troops from Syria</li>
+             </ul>
+           </td>
+         </tr>
+       </table>
+     </div>
+     </div>
+   </div>
+   <div class="row" style="width:100%;">
+     <div class="col-sm-4" style="background-color:white;">
+       <h2 style="padding-left:10px; color: DarkRed;">Republicans</h2>
+     </div>
+   </div>
+   <div class="row" style="width:100%;">
+     <div class="col-sm-4" style="background-color:white;">
+       <img alt="Photograph of Donald Trump" src = "https://bookstore.gpo.gov/sites/default/files/styles/product_page_image/public/covers/potus2_1.jpg?itok=EuD2PCtt">
+     </div>
+     <div class="col-sm-8" style="background-color:white;">
+       <div class="text">
+       <h3><a href="https://www.donaldjtrump.com/">Donald Trump</a> (@realDonaldTrump)</h3>
+       <p>Trump is the current U.S. President and has no other political experience.</p>
+       <p>His campaign focuses on his success during his first term as president.</p>
+       <table>
+         <tr>
+           <th>For</th>
+           <th>Against</th>
+         </tr>
+         <tr>
+           <td>
+             <ul>
+               <li>Expand background checks on firearms</li>
+               <li>Raise minimum wage</li>
+               <li>Withdrawing from the Paris Climate Accord</li>
+               <li>Fighting opioid addiction</li>
+             </ul>
+           </td>
+           <td>
+             <ul>
+               <li>Medicare for All or any universal healthcare</li>
+               <li>Government funding for Planned Parenthood</li>
+               <li>Fighting climate change</li>
+             </ul>
+           </td>
+         </tr>
+       </table>
+     </div>
+     </div>
+   </div>
+   <div class="row" style="width:100%;">
+     <div class="col-sm-4" style="background-color:white;">
+       <img alt="Photograph of Bill Weld" src = "http://www.issues2000.org/Bill_Weld.jpg">
+     </div>
+     <div class="col-sm-8" style="font-family: 'Open Sans',sans-serif; background-color: white;">
+       <h3><a href="https://www.weld2020.org/">Bill Weld</a> (@GovBillWeld)</h3>
+       <div class="text">
+       <p>Weld is a former governor of Massachusetts, Assistant Attorney General, and a Libertarian vice presidential candidate in 2016.</p>
+       <p>He is running as a champion of conservatism and his platform is based on his experience.</p>
+       <table>
+         <tr>
+           <th>For</th>
+           <th>Against</th>
+         </tr>
+         <tr>
+           <td>
+             <ul>
+               <li>Abortion rights</li>
+               <li>Decriminalization of marijuana</li>
+               <li>Death penalty</li>
+               <li>Fighting climate change, carbon capture, and carbon trading credits</li>
+               <li>Free trade</li>
+               <li>Term limits</li>
+               <li>Flat tax on income</li>
+             </ul>
+           </td>
+           <td>
+             <ul>
+               <li>Medicare for All or any universal healthcare</li>
+               <li>Government funding for Planned Parenthood</li>
+               <li>Fighting climate change</li>
+               <li>Gun control</li>
+               <li>Withdrawal from Paris Climate Accord</li>
+               <li>National standard for education</li>
+             </ul>
+           </td>
+         </tr>
+      </table>
+    </div>
+    </div>
+  </div>
+</div>
+</body>
+
+<div class="footer">
+  <div style="color:white;padding-bottom:10px;">&copy; 2019 risingvoters.com</div>
+  <div style="color:white;">Logo by Megan Andrews</div>
+</div>

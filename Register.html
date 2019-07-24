@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Titillium+Web:900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Barriecito&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+  <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" rel="stylesheet"> -->
+  <link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+  <title> Rising Youth: Voter registration </title>
+  <style>
+
+
+    .topnav {
+      background-color: white;
+      overflow: hidden;
+      top:0;
+      text-align:center;
+      vertical-align:top;
+    }
+    .topnav a{
+      text-decoration:none;
+      background-color: #FFFFFF;
+      color: #012169;
+      border: 0px;
+      font-family: 'Open Sans',sans-serif;
+      font-size: 20px;
+      font-weight: 1000;
+    }
+    .menu {
+      display:inline-block;
+      margin-bottom: 0px;
+      margin-top:0px;
+      margin-left:0px;
+      padding: 20px;
+      padding-right: 40px;
+      padding-left:40px;
+      vertical-align:middle;
+    }
+    .topnav a:hover { /*hover*/
+      /* background-color: #ddd;
+      color: #BF0A30;
+      text-align: center; */
+      color: #BF0A30;
+      text-decoration: none;
+    }
+
+    a.hover:hover {
+      text-decoration: underline;
+    }
+
+    .topnav a.active { /*onsite*/
+      /* border-bottom: 7px solid #bf0d3e;
+      padding-bottom: 0px; */
+      text-decoration:underline;
+      text-decoration-color:#BF0A30;
+
+    }
+    .topnav .icon {
+      display: none;
+      text-align: center;
+    }
+    @media screen and (max-width: 600px) {
+      .topnav a:not(:first-child) {display: none;}
+      .topnav a.icon {
+        float: right;
+        display: block;
+      }
+    }
+    @media screen and (max-width: 600px) {
+      .topnav.responsive {position: relative;}
+      .topnav.responsive a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+      .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: center;
+      }
+    }
+    #header{
+      color: #FFFFFF;
+      vertical-align:middle;
+    }
+
+    html {
+      background: url(HandsNew.jpg) no-repeat center center fixed;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+    }
+    /*header*/
+    h1{
+      color: #012169;
+    font-family: righteous;
+    font-style: bold;
+    font-size: 75px;
+    font-variant: small-caps;
+    margin-bottom: 10px;
+    margin-top: 20px
+    }
+    h2 {
+      text-align: center;
+      font-family:righteous;
+      color: #012169
+    }
+    h3{
+      text-align: center;
+      font-family: 'Noto Sans JP', sans-serif;
+
+    }
+    p {
+      text-align: center;
+      font-family: 'Noto Sans JP', sans-serif;
+    }
+    li {
+      font-family: 'Noto Sans JP', sans-serif;
+    }
+    #bring{
+      text-align: left;
+      /* list-style-position: inside; */
+      margin-left: 150px;
+    }
+    .column {
+      float: left;
+      width: 50%;
+    }
+
+/* Clear floats after the columns */
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    #Intro{
+      margin-left:auto;
+      margin-right:auto;
+      font-family: 'Noto Sans JP', sans-serif;
+      font-size:30px;
+      line-height:60px;
+      width:75%;
+    }
+    #chart{
+      margin-right:auto;
+      margin-left:auto;
+      width:40%;
+      display:block;
+    }
+    .button {
+      background-color: #008CBA; /* blue */
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 24px;
+      margin-left: 200px;
+      font-family: 'Noto Sans JP', sans-serif;
+      font-style :italic;
+    }
+    #steps{
+      width:100%;
+      clear:both;
+      margin:0px;
+    }
+    .step{
+      width:30%;
+      display:block;
+      margin-left:auto;
+      margin-right:auto;
+    }
+    #More {
+      width:100%;
+      padding:20px;
+      margin-bottom:50px;
+      margin:0px;
+      box-sizing:border-box;
+    }
+    .footer {
+      width: 100%;
+      background-color: #BF0A30;
+      color: white;
+      text-align: center;
+      padding:10px;
+      margin-bottom:0px;
+      font-family: 'Noto Sans JP', sans-serif;
+    }
+      #Home {
+        padding-left:0px;
+      }
+      #Logo {
+        padding:0px;
+      }
+      body {
+        margin:0px;
+        padding:0px;
+      }
+  </style>
+</head>
+
+<div class="topnav" id="header">
+  <div class="menu" id="Logo">
+    <a href="HomePage.html"><img style="width:25%;border:none;" src = "android-icon-192x192.png"></a>
+  </div>
+  <div class="menu" id="Home">
+    <a href="HomePage.html">Rising Voters</a>
+  </div>
+  <div class="menu" id="Register">
+    <a class="active" href="Register.html">Register</a>
+  </div>
+  <div class="menu">
+    <a href="Candidates.html">Candidates</a>
+  </div>
+  <div class="menu">
+    <a href="Maps.html">Maps</a>
+  </div>
+  <div class="menu">
+    <a href="AboutUs.html">About Us</a>
+  </div>
+  <div class="menu">
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()"></a>
+  </div>
+</div>
+
+<body>
+<h1 align="center" style = "font-family: 'Righteous', cursive;">Quick & Easy Registration </h1>
+
+
+<div id="Intro">
+  <p> We encourage adolescents to pre-register to vote and let your voice be heard.
+    After the significant drop of young voters from 2012 to 2016, turnout has been steadily
+    increasing and we hope to continue this trend.</p>
+</div>
+<br>
+<div id="pic">
+  <img id="chart" src= "https://www.census.gov/content/census/en/library/visualizations/2017/comm/voting-rates-age/jcr:content/map.detailitem.950.high.jpg/1494348865503.jpg">
+</div>
+
+<div id="steps">
+  <h2>Steps to Registration</h2>
+
+  <div class="row">
+  <div class="column">
+    <img class="step" src="http://pngimg.com/uploads/number1/number1_PNG14896.png">
+    <p align="center"> Gather your materials. You will need to know your: </p>
+    <div id="bring">
+      <ul>
+        <li> Citizenship status</li>
+        <li> Marital status</li>
+        <li> Driver license number</li>
+        <li> Social security number</li>
+        <li> Basic information about yourself</li>
+      </ul>
+    </div>
+  </div>
+  <div class="column">
+    <img class="step" src="http://pngimg.com/uploads/number2/Number%202%20PNG%20images%20free%20download_PNG14937.png">
+    <p align="center"> If you are from California, click this button and register to vote!
+       If you are not a California resident, visit the website of your Secretary of State.</p>
+      <a href="https://registertovote.ca.gov/" class="button" target="_blank"> Preregister to Vote!</a>
+
+  </div>
+</div>
+</div>
+
+<div id="More">
+  <h2> Registration Deadline</h2>
+  <p> In California, you must register to vote for the election by 11:59:59 p.m. Pacific Time on the 15th calendar day before the election.</p>
+  <p>If the deadline is missed, you can still register for future elections. Wait at least 24 hours for your updated registration status. </p>
+  <h2> Additional Information </h2>
+  <p>For more information on registering to vote you may want to visit the state's <a href= "https://www.sos.ca.gov/elections/frequently-asked-questions/" target="_blank">Frequently Asked Questions.</a></p>
+</div>
+
+<div class="footer">
+  <div style="color:white;padding-bottom:10px;">&copy 2019 risingvoters.com</div>
+  <div style="color:white;">Logo by Megan Andrews</div>
+</div>
+</body>
